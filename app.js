@@ -4,7 +4,11 @@ import serverless from 'serverless-http';
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello Wor2ld!');
+    res.send('Hello World!');
+});
+
+app.get('/hello', (req, res) => {
+    res.send('world');
 });
 
 // app.listen(3000, () => {
